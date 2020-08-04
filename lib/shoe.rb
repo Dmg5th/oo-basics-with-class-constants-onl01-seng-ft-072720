@@ -7,6 +7,14 @@ class Shoe
   def initialize = (brands)
     @brands = brands
   end 
+  
+  def initialize(brand)
+    @brand = brand
+    if (BRANDS.include?(brand))
+    BRANDS.push(brand) 
+    end 
+  end
+
 
 
   def cobble
